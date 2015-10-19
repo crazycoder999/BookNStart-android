@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".LoginActivity">
+
+    <TextView
+            android:id="@+id/txtheading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/heading1"
+            android:textColor="#fffafff9"
+            android:textSize="40sp"
+            android:textStyle="bold" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+
+    <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtheading1"
+            android:layout_below="@+id/txtheading1"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/hint_user"
+            android:textSize="25sp" android:lines="1"/>
+
+    <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtUsername"
+            android:layout_below="@+id/txtUsername"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="@string/hint_pwd"
+            android:textSize="25sp" android:password="true" android:lines="1"/>
+
+    <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtPassword"
+            android:layout_below="@+id/txtPassword"
+            android:layout_marginTop="28dp"
+            android:text="@string/login_button"
+            android:textSize="30sp" />
+
+    <TextView
+            android:id="@+id/txtError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin" android:layout_alignParentLeft="true" android:gravity="center"/>
+
+</RelativeLayout>
